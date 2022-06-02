@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Manrope:wght@200;800&family=Poiret+One&family=Raleway:wght@200&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <title>Статьи</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/articles_style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <nav class="nav">
+                <a class="nav__link" href="index.html">Главная</a>
+                <a class="nav__link" href="all_pages.html#about_arduino">Об Arduino</a>
+                <a class="nav__link" href="all_pages.html#articles">Статьи</a>
+                <a class="nav__link" href="all_pages.html#discussions">Обсуждения</a>
+                <a class="nav__link" href="all_pages.html#about">О нас</a>
+            </nav>
+
+            <div class="header__logo">AT</div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="section">
+            <div class="section__body">
+                <div class="section__title">5 интересных вещей, которые можно сделать на Arduino</div>
+                <div class="section__subtitle">Что только не придумают</div>
+                <img src="img/articles_img/ar3.jpg" alt="" class="section__icon left">
+                <div class="section__text"> Если у вас есть тяга к технологиям (или ребёнок с такой тягой), рассмотрите
+                    Arduino. Эта штука озадачит вас и ребёнка на много часов, а на выходе получатся удивительные
+                    проекты.
+                    В этой статье вы найдете обзор инженерных проектов ардуино с кратким описанием каждого из них. Мы
+                    постарались не просто рассказать о проектах для начинающих, но и дать краткие комментарии с
+                    примерами и схемами реализации. Большинство проектов могут быть созданы с контроллерами Arduino Uno
+                    R3, Nano или Mega. Надеемся, что ваше знакомство с платформой продолжится, и вы сможете не только
+                    повторить уже существующие идеи, но и придумать свои решения, вдохновленные примерами.
+
+                    <div class="section__subtitle">Робот-бармен с Bluetooth-управлением</div>
+
+                    <img src="img/articles_img/ar4.jpg" alt="" class="section__icon">
+
+
+                    <p>Незаменимое устройство для любой вечеринки: работает от восьми батареек, готовит много коктейлей
+                        и управляется без проводов. В основе механического бармена — плата Arduino, приводы для
+                        позиционирования шейкера и подачи напитков, датчики положений.
+                    </p>
+                    <p>Главная сложность при изготовлении — инженерная. Нужно точно прикрутить все детали и соединить их
+                        между собой, чтобы ёмкость оказывалась точно под нужными бутылками.</p>
+                    <p> Подробнее <a
+                            href="https://usamodelkina.ru/14439-robotizirovannyj-barmen-s-upravleniem-po-bljutus.html">usamodelkina.ru</a>
+                    </p>
+
+                    <div class="section__subtitle">Взломщик кодовых замковм</div>
+
+                    <img src="img/articles_img/ar5.jpg" alt="" class="section__icon">
+
+
+                    <p>Этот проект разработал хакер Сэми Камкар, и мы приводим его только в демонстрационных целях. Для
+                        взлома, кроме платы Arduino, автор взял серво- и шаговый двигатели для перебора комбинаций и
+                        соединил всё на самодельном шасси из алюминия. В основе алгоритма — простой перебор всех
+                        комбинаций, но робот это делает быстрее человека.</p>
+                    <p> Подробнее <a href="https://youtu.be/YcpSvHpbHQ4">YouTube</a>
+                    </p>
+
+                    <div class="section__subtitle">Nod Bang — киваем головой и делаем бит</div>
+
+                    <img src="img/articles_img/ar6.jpg" alt="" class="section__icon">
+
+
+                    <p>Идея в том, чтобы не просто кивать в такт музыке, а кивками самому генерировать звук. Эндрю Ли
+                        сделал специальное устройство, которое следит за положением головы и в момент наклона
+                        воспроизводит нужный звук.</p>
+
+                    <p> В наушники он встроил акселерометр, кнопки отвечают за выбор звука, а Arduino — за
+                        воспроизведение звука на компьютере через MIDI-интерфейс. Чтобы всё выглядело эффектнее, у
+                        кнопок есть подсветка, и они тоже делают бит.</p>
+                    <p> Подробнее <a href="https://youtu.be/vaE6fooDgrs">YouTube</a>
+                    </p>
+                    <div class="section__subtitle">Поющее растение</div>
+
+                    <img src="img/articles_img/ar7.jpg" alt="" class="section__icon">
+
+
+                    <p>По сути это терменвокс, который сделали в виде растения. Все остальные принципы работы остались
+                        теми же: звук возникает при движении рук, и разные движения генерируют разную мелодию.</p>
+
+                    <p> Плата регистрирует изменение амплитуды сигнала, для чего автор использует самодельный сенсорный
+                        детектор для анализа прикосновений к цветку. Кроме этого понадобилась плата расширения Gameduino
+                        и сам цветок.</p>
+                    <p> Подробнее <a href="https://vimeo.com/50739972">Vimeo</a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <footer> © 2022 Yumzhana</footer>
+
+
+
+
+
+</body>
+
+</html>

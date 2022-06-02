@@ -1,0 +1,266 @@
+/* МЕНЮ */
+.header {
+  background-color: #ffffff;
+}
+
+.header__logo {
+  color: rgb(133, 133, 133);
+}
+
+.nav__link:hover {
+  background-color: #2d959c;
+  color: #ffffff;
+}
+
+.nav__link {
+  background-color: #d1e3e4;
+  color: #565656;
+}
+
+.nav__link:after {
+  background-color: #2d959c;
+}
+.nav__link.active  {
+  background-color: #2d959c;
+  color: #ffffff;
+}
+
+.nav__link:target {
+
+  background-color: #2d959c;
+  color: #ffffff;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  background-color: #e9eaecb7;
+}
+
+/* КОНЕЦ МЕНЮ */
+
+
+
+.sections__body {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+
+.sections__header {
+  margin: 0px 0px 30px 0px;
+}
+
+.sections__title {
+  display: block;
+  top: 100px;
+  margin: 0px 0px 100px 0px;
+  font-size: 35px;
+  letter-spacing: 9px;
+  position: relative;
+  text-align: center;
+  padding: 0px 0px 30px 0px;
+}
+
+
+.sections__title:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  bottom: 10px;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+}
+
+.sections__text {
+  width: 65%;
+  color: #868585;
+  text-align: center;
+  line-height: 28px;
+  margin: 40px auto;
+  
+}
+
+.arduino__text {
+  width: 75%;
+  color: #868585;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 28px;
+  margin: 20px auto;
+}
+
+.arduino__item_left {
+  margin: 0 38px 38px 0;
+  width: 300px;
+  border-radius: 25px;
+  float: left;
+}
+
+.arduino__item_right {
+  margin: 0 0 20px 38px;
+  width: 175px;
+  border-radius: 25px;
+  float: right;
+}
+
+.articles__row {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.articles__column {
+  border-radius: 25px;
+  background-color: #c7d4d6;
+  padding: 15px;
+  flex: 0 0 28%;
+  transition: 1s;
+}
+
+.articles__column:hover {
+  background-color: #bdcacc;
+  transform: scale(1.1);
+}
+
+.articles__btn {
+  display: block;
+  width: 150px;
+  margin: 5% auto;
+  background-color: #565656;
+  padding: 8px;
+  border: 3px solid #fff;
+  border-radius: 18px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  transition: background .1s linear, color .1s linear;
+}
+
+.articles__btn:hover {
+  background-color: #fff;
+  color: #333;
+
+}
+
+
+.section__icon {
+  margin: 0px auto 40px auto;
+  border-radius: 50%;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 2px rgb(90, 90, 90);
+  transition: 1s;
+}
+.section__icon:hover {
+  transform: scale(1.2);
+}
+.discussions__row {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.discussions__column {
+  padding: 15px;
+  flex: 0 0 28%;
+  transition: 1s;
+}
+/* .discussions__column:hover {
+  padding: 15px;
+  flex: 0 0 28%;
+  transform: scale(1.1);
+} */
+
+.discussions__arrow {
+  margin: 30px auto;
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid #000000;
+  border-right: 5px solid #000000;
+
+  transform: rotate(-45deg);
+}
+
+.item-about__title {
+  text-align: center;
+  color: #000000;
+  font: size 14px;;
+  text-transform: uppercase;
+  letter-spacing: 3.52px;
+  margin: 0px 0px 35px 0px;
+}
+
+.item-about__text {
+  text-align: center;
+  color: #202020;
+  line-height: 26px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+
+
+.about__icon {
+  width: 55%;
+  border-radius: 15%;
+  margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 880px){
+  .articles__row {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .articles__column {
+    margin-top: 10px;
+  } 
+  .item-articles__icon {
+    width: 25%;
+  }
+  .discussions__row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .discussions__column {
+    margin-top: 10px;
+  }
+  .sections__title {
+    top: 150px;
+    margin: 0px 0px 150px 0px;
+    font-size: 30px;
+    letter-spacing: 9px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 1400px) {
+  .arduino__item_right {
+  margin: 0 0 20px 38px;
+  width: 175px;
+  border-radius: 25px;
+  float: right;
+}
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(208, 208, 208);
+  height: auto;
+  padding: 20px;
+}
+@media screen and (min-width: 1500px){
+  .arduino__item_right {
+    margin: 0 0 10px 38px;
+    width: 160px;
+  }
+  
+}
